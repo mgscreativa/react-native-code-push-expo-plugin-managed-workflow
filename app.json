@@ -32,7 +32,7 @@
     "plugins": [
       "expo-router",
       [
-        "./app.plugin",
+        "./plugins/react-native-code-push-expo-plugin",
         {
           "android": {
             "CodePushDeploymentKey": "YOUR_ANDROID_CODE_PUSH_KEY"
@@ -43,8 +43,6 @@
         }
       ]
     ],
-
-
     "experiments": {
       "tsconfigPaths": true,
       "typedRoutes": true
