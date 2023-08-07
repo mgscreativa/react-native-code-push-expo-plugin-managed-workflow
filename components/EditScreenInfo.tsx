@@ -9,14 +9,11 @@ import Colors from '@/constants/Colors';
 
 export default function EditScreenInfo({ path }: { path: string }) {
   const [timesPressed, setTimesPressed] = useState(0);
-  const isHermesEnabled = !!global.HermesInternal ? 'true' : 'false';
 
   let textLog = 'Press the button';
   if (timesPressed) {
     textLog = timesPressed + 'x onPress';
   }
-
-  console.log('isHermesEnabled:', isHermesEnabled);
 
   return (
     <View>
@@ -33,7 +30,6 @@ export default function EditScreenInfo({ path }: { path: string }) {
           darkColor="rgba(255,255,255,0.05)"
           lightColor="rgba(0,0,0,0.05)">
           <MonoText>{path}</MonoText>
-          <MonoText>isHermesEnabled: {isHermesEnabled}</MonoText>
         </View>
 
         <Text
