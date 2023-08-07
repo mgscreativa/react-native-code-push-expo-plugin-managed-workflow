@@ -1,0 +1,49 @@
+{
+  "cli": {
+    "version": ">= 3.18.3"
+  },
+  "build": {
+    "base": {
+      "ios": {
+        "resourceClass": "m-medium"
+      },
+      "cache": {
+        "key": "1.0.0.1"
+      }
+    },
+    "development": {
+      "extends": "base",
+      "channel": "development",
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "env": {
+          "GOOGLE_SERVICES_FILE": "expo.dev"
+        }
+      }
+    },
+    "production": {
+      "extends": "base",
+      "channel": "production",
+      "android": {
+        "buildType": "app-bundle",
+        "env": {
+          "GOOGLE_SERVICES_FILE": "expo.dev"
+        }
+      }
+    },
+    "production-android-apk": {
+      "extends": "production",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview": {
+      "distribution": "internal"
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
