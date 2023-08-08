@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "react-native-code-push-expo-plugin-managed-workflow",
+    "name": "expo-code-push-plugin-managed-workflow",
     "slug": "react-native-code-push-expo-plugin-managed-workflow",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -36,10 +36,10 @@
         "./plugins/react-native-code-push-expo-plugin",
         {
           "android": {
-            "CodePushDeploymentKey": "YOUR_ANDROID_CODE_PUSH_KEY"
+            "CodePushDeploymentKey": "_JMSXXXXonu7XXXX_YSkXXXXuDGMXXXX79GOX"
           },
           "ios": {
-            "CodePushDeploymentKey": "YOUR_IOS_CODE_PUSH_KEY"
+            "CodePushDeploymentKey": "XXXXAs1zXXXXPX0GXXXX9ceUXXXXQSf9XXXXX"
           }
         }
       ]
@@ -54,6 +54,10 @@
       },
       "eas": {
         "projectId": "164de4cd-f0bf-4a96-a626-2f38e1399344"
+      },
+      "updates": {
+        "url": "https://u.expo.dev/164de4cd-f0bf-4a96-a626-2f38e1399344",
+        "fallbackToCacheTimeout": 0
       }
     }
   }
