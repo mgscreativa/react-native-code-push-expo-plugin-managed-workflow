@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "expo-code-push-plugin-managed-workflow",
+    "name": "Expo CodePush Plugin",
     "slug": "react-native-code-push-expo-plugin-managed-workflow",
     "version": "1.0.0",
     "orientation": "portrait",
