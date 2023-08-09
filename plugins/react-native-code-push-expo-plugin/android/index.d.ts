@@ -1,5 +1,5 @@
-import { withAndroidBuildscriptDependency } from '../../src/android/buildscriptDependency';
-import { withAndroidMainApplicationDependency } from '../../src/android/mainApplicationDependency';
-import { withAndroidSettingsDependency } from '../../src/android/settingsDependency';
-import { withAndroidStringsDependency } from '../../src/android/stringsDependency';
+import { withAndroidBuildscriptDependency } from './buildscriptDependency';
+import { withAndroidMainApplicationDependency } from './mainApplicationDependency';
+import { withAndroidSettingsDependency } from './settingsDependency';
+import { withAndroidStringsDependency } from './stringsDependency';
 export { withAndroidBuildscriptDependency, withAndroidSettingsDependency, withAndroidStringsDependency, withAndroidMainApplicationDependency, };
