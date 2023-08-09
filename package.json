@@ -7,7 +7,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "eas-build-pre-install": "echo $GOOGLE_SERVICES_JSON_EXPO_CODEPUSH_PLUGIN | base64 --decode > ./google-services.json"
   },
   "jest": {
     "preset": "jest-expo"
@@ -32,8 +33,7 @@
     "react-native-gesture-handler": "~2.12.0",
     "react-native-safe-area-context": "4.6.3",
     "react-native-screens": "~3.22.0",
-    "react-native-web": "~0.19.6",
-    "expo-updates": "~0.18.11"
+    "react-native-web": "~0.19.6"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
