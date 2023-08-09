@@ -16,14 +16,17 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mgscreativa.reactnativecodepushexpopluginmanagedworkflow",
+      "buildNumber": "3"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.mgscreativa.reactnativecodepushexpopluginmanagedworkflow"
+      "package": "com.mgscreativa.reactnativecodepushexpopluginmanagedworkflow",
+      "versionCode": 3
     },
     "web": {
       "bundler": "metro",
