@@ -16,9 +16,9 @@ This is a demo repo implementing CodePush for Expo dev client using [react-nativ
   * **Production iOS** (you need to submit this to TestFlight to test in devices): `npx eas build --profile production --platform ios --clear-cache --local`
   * **Production Android APK** (to test in devices): `npx eas build --profile production-android-apk --platform android --clear-cache --local`
 
-After you have your app running on your device, try to change something in code and then upload a CodePush release ([Create deployments](#create-deployments)), wait a minute and then restart the app os set it to background and the foreground it again.
+After you have your app running on your device, try to change something in code and then upload a CodePush release ([Create deployments](#create-deployments)), wait a minute and then restart the app os set it to background and then foreground it again.
 
-At this point you should be able to tweak the project, analyze it and set it up in your production project maybe implementing manual CodePush updates.
+At this point you should be able to tweak the project, analyze it and set it up in your production project, maybe implementing manual CodePush updates.
 
 ## Enable [react-native-code-push-expo-plugin](https://github.com/deggertsen/react-native-code-push-expo-plugin/) in your project
 To enable the plugin in your project, you need to copy `/plugins/react-native-code-push-expo-plugin` and set the plugin config in your app.json, app.config.json or app.config.js. If you don't need Android or iOS CodePush support simply remove the Android or iOS section. More up to date plugin code may be in the original repo [react-native-code-push-expo-plugin](https://github.com/deggertsen/react-native-code-push-expo-plugin/)
@@ -40,7 +40,7 @@ To enable the plugin in your project, you need to copy `/plugins/react-native-co
 ```
 
 ## Support the PR on react-native-code-push repo
-Currently, there's an open PR to have this plugin out of the box in react-native-code-push package but still waiting for approval to merge, if you can, write a comment asking for this plugin to be added to the package [Expo plugin to simplify installation with expo](https://github.com/microsoft/react-native-code-push/pull/2415)
+Currently, there's an open PR to have this plugin out of the box in react-native-code-push package but still waiting for approval to merge, if you can, write a comment asking for this plugin to be added to the package. Here's the PR link [Expo plugin to simplify installation with expo](https://github.com/microsoft/react-native-code-push/pull/2415)
 
 ## Useful CodePush commands
 
