@@ -1,5 +1,6 @@
 import { registerRootComponent } from "expo";
 import { ExpoRoot } from "expo-router";
+import Head from "expo-router/head";
 import codePush from "react-native-code-push";
 
 let codePushOptions = {
@@ -7,10 +8,19 @@ let codePushOptions = {
   installMode: codePush.InstallMode.IMMEDIATE,
 };
 
+const ctx = require.context(
+    process.env.EXPO_ROUTER_APP_ROOT!,
+    true,
+    /.*/
+);
+
 // Must be exported or Fast Refresh won't update the context
 export function App() {
-  const ctx = require.context("./app");
-  return <ExpoRoot context={ctx} />;
+  return (
+      <Head.Provider>
+        <ExpoRoot context={ctx} />
+      </Head.Provider>
+  );
 }
 
 registerRootComponent(codePush(codePushOptions)(App));
