@@ -5,7 +5,7 @@ This is a demo repo implementing CodePush for Expo dev client using [react-nativ
 * Checkout repo
 * Run `npm install`
 * Do CodePush magic to create a deployment and get the keys ([Useful CodePush commands](#useful-codepush-commands))
-* Modify app.json **CodePushDeploymentKey** with real deployment keys for Android and iOS
+* Modify app.json **CodePushDeploymentKey** with real deployment keys for Android or iOS, or both if you need
 * Build the dev client or the production app (need to have your local dev environment setup, more here [Setting up the development environment](https://reactnative.dev/docs/environment-setup)):
     * **Development client Android**: `npx eas build --profile development --platform android --clear-cache --local`
     * **Development client iOS**: `npx eas build --profile development --platform ios --clear-cache --local`
