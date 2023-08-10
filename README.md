@@ -1,4 +1,4 @@
-# Demo repo for react-native-code-push-expo-plugin using Expo and dev client
+# Demo repo for react-native-code-push-expo-plugin using Expo Development Client
 This is a demo repo implementing CodePush for Expo dev client using [react-native-code-push-expo-plugin](https://github.com/deggertsen/react-native-code-push-expo-plugin/) config plugin. **This will not work on Expo Go** projects, it will only work for **Expo Development Client** projects.
 
 ## Setup
