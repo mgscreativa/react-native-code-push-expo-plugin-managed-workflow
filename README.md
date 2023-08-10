@@ -13,7 +13,7 @@ This is a demo repo implementing CodePush for Expo dev client using [react-nativ
     * **Production iOS** (you need to submit this to TestFlight to test in devices): `npx eas build --profile production --platform ios --clear-cache --local`
     * **Production Android APK** (to test in devices): `npx eas build --profile production-android-apk --platform android --clear-cache --local`
 
-After you have your app running on your device, try to change something in code and then upload a CodePush release [Create deployments](#create-deployments), wait a minute and then restart the app os set it to background and the foreground it again. At this point you should be able to tweak the project, analyze it and set it uo in your production project maybe implementing manual CodePush updates. To enable the plugin in your project, you need to copy `/plugins/react-native-code-push-expo-plugin` and set the plugin config in your app.json, app.config.json or app.config.js. If you don't need Android or iOS CodePush support simply remove the Android or iOS section.
+After you have your app running on your device, try to change something in code and then upload a CodePush release ([Create deployments](#create-deployments)), wait a minute and then restart the app os set it to background and the foreground it again. At this point you should be able to tweak the project, analyze it and set it uo in your production project maybe implementing manual CodePush updates. To enable the plugin in your project, you need to copy `/plugins/react-native-code-push-expo-plugin` and set the plugin config in your app.json, app.config.json or app.config.js. If you don't need Android or iOS CodePush support simply remove the Android or iOS section.
 
 ```javascript
 "plugins": [
