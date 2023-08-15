@@ -121,7 +121,7 @@ Adjust -a param as you need
 * **iOS**: `appcenter codepush deployment list -a YOURACCOUNT/ios-expo-code-push-plugin-managed-workflow --displayKeys`
 
 ### Send a bundle update (release)
-Adjust -a, --deployment-name, --entry-file App.tsx, --use-hermes and --target-binary-version params as you need. See CodePush docs [here](https://learn.microsoft.com/en-us/appcenter/distribution/codepush/cli) for more info
+Adjust -a, --deployment-name, --entry-file **should be pointed at your file stated in main in package.json. In this repo is `"main": "App.tsx"`**, --use-hermes and --target-binary-version params as you need. See CodePush docs [here](https://learn.microsoft.com/en-us/appcenter/distribution/codepush/cli) for more info
 
 * **Android**: `appcenter codepush release-react -a YOURACCOUNT/android-expo-code-push-plugin-managed-workflow --deployment-name "Development" --entry-file App.tsx --use-hermes --target-binary-version "1.0.0"`
 * **iOS**: `appcenter codepush release-react -a YOURACCOUNT/ios-expo-code-push-plugin-managed-workflow --deployment-name "Development" --entry-file App.tsx --use-hermes --target-binary-version "1.0.0"`
