@@ -7,6 +7,11 @@
       "ios": {
         "resourceClass": "m-medium"
       },
+      "android": {
+        "env": {
+          "GOOGLE_SERVICES_FILE": "expo.dev"
+        }
+      },
       "cache": {
         "key": "1.0.0.5"
       }
@@ -16,29 +21,33 @@
       "developmentClient": true,
       "distribution": "internal",
       "android": {
-        "buildType": "apk",
-        "env": {
-          "GOOGLE_SERVICES_FILE": "expo.dev"
-        }
+        "buildType": "apk"
+      }
+    },
+    "development-ios-simulator": {
+      "extends": "development",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "production-ios-simulator": {
+      "extends": "production",
+      "ios": {
+        "simulator": true
       }
     },
     "production": {
       "extends": "base",
       "android": {
-        "buildType": "app-bundle",
-        "env": {
-          "GOOGLE_SERVICES_FILE": "expo.dev"
-        }
+        "buildType": "app-bundle"
       }
     },
-    "production-android-apk": {
-      "extends": "production",
+    "production-preview": {
+      "extends": "base",
+      "distribution": "internal",
       "android": {
         "buildType": "apk"
       }
-    },
-    "preview": {
-      "distribution": "internal"
     }
   },
   "submit": {

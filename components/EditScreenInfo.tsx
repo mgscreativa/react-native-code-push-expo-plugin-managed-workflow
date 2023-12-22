@@ -5,14 +5,14 @@ import { ExternalLink } from './ExternalLink';
 import { MonoText } from './StyledText';
 import { Text, View } from './Themed';
 
-import Colors from '@/constants/Colors';
+import Colors from '../constants/Colors';
 
 export default function EditScreenInfo({ path }: { path: string }) {
   const [timesPressed, setTimesPressed] = useState(0);
 
   let textLog = 'Press the button';
   if (timesPressed) {
-    textLog = timesPressed + 'x onPress';
+    textLog = `Pressed ${timesPressed} times`;
   }
 
   return (
@@ -43,11 +43,11 @@ export default function EditScreenInfo({ path }: { path: string }) {
       <View>
         <Pressable
             onPress={() => {
-              setTimesPressed(current => current + 1);
+              setTimesPressed(current => ++current);
             }}
             style={({pressed}) => [
               styles.wrapperCustom,
-              {backgroundColor: pressed ? 'rgb(106,123,143)' : 'rgb(27,82,148)',},
+              {backgroundColor: pressed ? 'rgb(143,106,106)' : 'rgb(148,27,27)',},
             ]}>
           {({pressed}) => (
               <Text style={styles.text}>{pressed ? 'Pressed!' : 'Press Me'}</Text>

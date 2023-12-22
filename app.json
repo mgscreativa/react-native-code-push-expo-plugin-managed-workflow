@@ -36,7 +36,7 @@
     "plugins": [
       "expo-router",
       [
-        "./plugins/react-native-code-push-expo-plugin",
+        "react-native-code-push-plugin",
         {
           "android": {
             "CodePushDeploymentKey": "_JMSXXXXonu7XXXX_YSkXXXXuDGMXXXX79GOX"
