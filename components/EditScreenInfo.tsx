@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Pressable, StyleSheet } from 'react-native';
+import {Pressable, StyleSheet} from 'react-native';
 
 import { ExternalLink } from './ExternalLink';
 import { MonoText } from './StyledText';
@@ -116,3 +116,4 @@ const styles = StyleSheet.create({
     backgroundColor: '#f9f9f9',
   },
 });
+
