@@ -68,8 +68,8 @@ Adjust --display-name --release-type params as you need
 ### Create deployments
 Here you get the deployment key. Adjust -a and Development params as you need
 
-* **Android deployment**: `appcenter codepush deployment add -a YOURACCOUNT/android-expo-code-push-plugin-managed-workflow "Development"`
-* **iOS deployment**: `appcenter codepush deployment add -a YOURACCOUNT/ios-expo-code-push-plugin-managed-workflow "Development"`
+* **Android deployment**: `appcenter codepush release-react -a YOURACCOUNT/android-expo-code-push-plugin-managed-workflow --deployment-name 'Development' --entry-file 'node_modules/expo/AppEntry.js' --use-hermes --target-binary-version '1.0.1'`
+* **iOS deployment**: `appcenter codepush release-react -a YOURACCOUNT/ios-expo-code-push-plugin-managed-workflow --deployment-name 'Development' --entry-file 'node_modules/expo/AppEntry.js' --use-hermes --target-binary-version '1.0.1'`
 
 ### Get deployment keys
 Adjust -a param as you need
